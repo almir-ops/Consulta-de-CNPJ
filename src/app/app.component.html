@@ -1,0 +1,21 @@
+<div class="po-wrapper">
+  <po-toolbar p-title="ComCNPJ"></po-toolbar>
+
+  <po-menu [p-menus]="[{ label: 'Home', link: '/app.component.html' }]"></po-menu>
+
+  <po-page-default p-title="">
+    <div class="po-xl-4 po-lg-4  po-md-6 po-sm-12">
+    <p> Consulte o CNPJ </p>
+    <po-input p-mask="99.999.999/9999-99" name="label" [(ngModel)]="input" p-placeholder="Digite aqui o CNPJ (Apenas numeros)"></po-input>
+    
+    <po-button (p-click)="onClick()" (p-click)="modal.open()" p-label="Consultar" ></po-button>
+    </div>
+
+    <po-modal #modal p-title="Dados">
+      <po-info  class="po-md-12" [p-value]="nome" p-label="Nome Fantasia :"></po-info>
+      <po-info  class="po-md-12" [p-value]="nomeRazao" p-label="Razao Social :"></po-info>
+      <po-info  class="po-md-12" [p-value]="dataInicio" p-label="Data Inicio:"></po-info>
+      <po-info  class="po-md-12" [p-value]="descricao" p-label="Descricao :"></po-info>
+    </po-modal>
+  </po-page-default>
+</div>
