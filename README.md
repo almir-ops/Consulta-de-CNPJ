@@ -1,4 +1,6 @@
-# MyPoProject
+# Consulta de CNPJ
+
+Projeto desenvolvido com PO-UI, uma biblioteca de componentes da TOTVS! 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.6.
 
